@@ -1,0 +1,431 @@
+/* DE SELECTOR */
+/* Elimino margenes por defecto en la pagina */
+*{margin: 0; padding:0; box-sizing: border-box;}
+
+/* Seteo el tamaño y tipo de fuente  */
+html{
+    font-size: 62.5%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+    background-color: brown;
+}
+
+/* _____________GRID PARA PAGINA 1 MUESTRA INDEX _______________________*/
+/* A TRABAJAR CON GRID ._. */
+/* LO INTENTE PERO SE ROMPIA TODO SUPONGO QUE PODRIA INTENTAR ARMAR UNA GRID PARA EL COLLAGE DE LA MUESTRA GRAL DEL INICIO. PERO PARA EL LAY OUT SE ME QUEMARON LOS LIBROS */
+@media only screen and (min-width: 0px) and (max-width: 767px){
+    .gridContainerA{
+        display: grid;
+        grid-area:
+         "encabezado encabezado"
+         "nav nav"
+         "collage collage"
+         "tematicaA tematicaA"
+         "tematicaA1 tematicaA1"
+         "tarjetaA1a tarjetaA1a"
+         "tarjetaA1b tarjetaA1b"
+         "tematicaA2 tematicaA2"
+         "tarjetaA2a tarjetaA2a"
+         "tarjetaA2b tarjetaA2b"
+         "tematicaB tematicaB"
+         "tematicaB1 tematicaB1"
+         "tarjetaB1a tarjetaB1a"
+         "tarjetaB1b tarjetaB1b"
+         "tematicaB2 tematicaB2"
+         "tarjetaB2a tarjetaB2a"
+         "tarjetaB2b tarjetaB2b"
+         "tematicaC tematicaC"
+         "tematicaC1 tematicaC1"
+         "tarjetaC1a tarjetaC1a"
+         "tarjetaC1b tarjetaC1b"
+         "pie pie"
+        ;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 25px 10px 75% 100vh 10% 50% 50% 10% 50% 50% 100% 10% 50% 50% 10% 50% 50% 100% 10% 50% 50% 20%;
+    }
+
+
+}
+
+
+header{
+    background-color: rgb(0, 0, 0);
+    grid-area: encabezado;
+    height: 6vh;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+
+nav{
+    background-color: rgb(135, 56, 56);
+    grid-area: nav;
+    height: 4vh;
+    border: solid 1px;
+    display: flex;
+}
+
+#Muestra{
+    background-color: orange;
+    grid-area: collage;
+    height: 90vh;
+    width: auto;
+    display: flex;
+}
+
+#Postales{
+    grid-area: tematicaA;
+    display: flex;
+    width: auto;}
+
+#Rurales{
+    background-color: rgb(0, 0, 0);
+    grid-area: tamaticaA1;}
+#TarjetaA1a{grid-area: tarjetaA1a;
+    display: flex;}
+#TarjetaA1b{grid-area: tarjetaA1b;
+    display: flex;}
+
+#Bosques{
+    background-color: rgb(0, 0, 0);
+    grid-area: tematicaA2;}
+#TarjetaA2a{grid-area: tarjetaA2a;
+    display: flex;}
+#TarjetaA2b{grid-area: tarjetaA2b;
+    display: flex;}
+
+#NatMuerta{
+    grid-area: tematicaB;
+    display: flex;
+    width: auto;}
+
+#Flores{
+    background-color: rgb(0, 0, 0);
+    grid-area: tematicaB1;}
+#TarjetaB2a{grid-area: tarjetaB1a;
+    display: flex;}
+#TarjetaB2b{grid-area: tarjetaB1b;
+    display: flex;}
+
+#Alimentos{
+    background-color: rgb(0, 0, 0);
+    grid-area: tematicaB2;}
+#TarjetaB2a{grid-area: tarjetaB2a;
+    display: flex;}
+#TarjetaB2b{grid-area: tarjetaB2b;
+    display: flex;}
+
+#Abstractos{
+    grid-area: tematicaC;
+    display: flex;
+    width: auto;}
+#Musica{
+    background-color: rgb(0, 0, 0);
+    grid-area: tematicaC1;}
+#TarjetaC2a{grid-area: tarjetaC1a;
+    display: block;}
+#TarjetaC2b{grid-area: tarjetaC1b;
+    display: block;
+}
+
+#footer {
+    border: solid;
+    background-color: rgb(255, 226, 94);
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 200px;
+}
+
+
+/* ____________GENERALES_______________________________________ */
+
+/* COLLAGE PRINCIPAL Y TEMATICAS */
+section{
+    height: 100vh;
+    width: auto;
+    background-color: white;
+    border: solid 1px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+.eslogan{font-style: italic;}
+
+/* CONTENEDOR IMAGEN DE TEMATICA*/
+.imagenTema {
+    height: 65vh;
+    border:solid 1px black;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+section div img {width: 100%; height:auto;}
+img{border-radius: 10px;}
+
+.descripcionTematica{
+    display: flex;
+    flex-direction: column;
+    height: 20vh;
+    width: 100%;
+    color:red;
+    text-align: center;
+    border: solid 1px black;
+    padding: 50px;
+    background-color: white;
+}
+
+h2 { color: white;
+    background-color: black;
+    display: block;
+    height: 4vh;}
+
+/* _______TARJETAS DE CUADROS*/
+article{
+    /* width: auto; */
+    height: 400px;
+    border: solid 1px black;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    /* height: 42vh; */
+    color:red;
+    text-align: center;
+    margin: 0px 10vw 0px 10vw;
+    padding: 10px 50px 10px 50px;
+}
+
+
+/* ____________________PARTICULARES___ */
+/* NAV horizontal y desplegable */
+ul {
+    list-style: none;
+    font-size: 0;
+}
+li {
+    display: inline-block;
+    width: 150px;
+    position: relative;
+    left: 700px;
+    font-size: 14px;
+}
+ul ul {
+    position: absolute;
+    right: 700px;
+    display: none;
+    line-height: 40px;
+}
+
+ul ul li {
+    display: block;
+    text-align: left;
+    border: solid 1px;
+}
+
+ul ul ul li  {
+    display: inline-block;
+    text-align: left;
+    position: absolute;
+    margin-left: 700px;
+    border: solid 1px;
+    color: blue;
+}
+
+ul li:hover ul{
+    display: block;
+    text-align: right;
+}
+
+/* le quito la viñeta a la lista */
+ul {list-style-type: none;}
+
+#rural1 {display: inline-block;}
+#rural2 {
+    display: inline-block;
+    position: relative;
+    right: 5px;
+}
+#flores1 {display: inline-block;}
+
+#flores2 {
+    display: inline-block;
+    position: relative;
+    right: 5px;
+}
+
+#alimentos1 {
+    display: inline-block;
+}
+
+#alimentos2 {
+    display: inline-block;
+    position: relative;
+    right: 5px;
+}
+
+#abstracto1 {display: inline-block;}
+
+#abstracto2 {
+    display: inline-block;
+    position: relative;
+    right: 5px;
+}
+
+#redes{
+    height: auto;
+    width: 50vw;
+}
+.textoNaranja{color:orange;}
+
+
+
+
+/* _______GRID PARA PAGINA 3 "PARTICIPACIONES"____________________________________ */
+
+@media only screen and (min-width: 0px) and (max-width: 767px){
+    .gridContainerB{
+        display: grid;
+        grid-area:
+         "encabezado encabezado"
+         "nav nav"
+         "collage2 collage2"
+         "Expocisiones Expocisiones"
+         "tarjetaD tarjetaD"
+         "tarjetaE tarjetaE"
+         "resenas resenas"
+         "tarjetaF tarjetaG"
+         "tarjetaH tarjetaI"
+         "Tour Tour"
+         "tour tour"
+         "contacto contacto"
+         "formulario formulario" 
+         "pie pie"
+        ;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 25px 8px 75% 100% 50% 50% 100% 50% 50% 8% 100% 80% 100% 20%; 
+    }
+}
+
+
+
+#Participaciones{
+    background-color: orange;
+    grid-area: collage2;
+    height: 90vh;
+    width: auto;
+    display: flex;
+}
+
+#Exposiciones{
+    grid-area: expocisiones;
+    display: flex;
+    width: auto;
+}
+.exposiciones{grid-area:expocisiones;}
+
+#TarjetaD{grid-area: tarjetaD;
+    display: block;}
+#TarjetaE{grid-area: tarjetaE;
+    display: block;
+}
+
+#Resenas{
+    grid-area: Resenas;
+    display: flex;
+    width: auto;
+}
+
+#TarjetaF{grid-area: tarjetaF;
+    display: inline-block;
+    width: 40%;
+}
+#TarjetaG{grid-area: tarjetaG;
+    display: inline-block;
+    width: 40%;
+}
+#TarjetaH{grid-area: tarjetaH;
+    display: inline-block;
+    width: 40%;
+}
+#TarjetaI{grid-area: tarjetaI;
+    display: inline-block;
+    width: 40%;
+}
+
+.resennas{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    background-color: rgb(215, 139, 98);
+    text-align: center;
+}
+
+
+
+#Tour{
+    grid-area: Tour;
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    align-items: center;
+}
+.tour{
+    display: flex;
+    grid-area: tour;
+    background-color: white;
+    border: solid 1px black;
+    justify-content: center;
+    text-align: center;
+    font-size: 3rem;
+    width: auto;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+#Contacto{grid-area: contacto;}
+#Formulario{
+    width: auto;
+    grid-area: formulario;
+    display: flex;
+    flex-direction: row;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+
+.contacto{
+    display: flex;
+    flex-direction: row;
+    grid-area: contacto;
+    background-color: white;
+    border: solid 1px black;
+    padding: 10px;
+    width: auto;
+    font-size: 1.5rem;
+}
+
+.formulario{
+    border: solid 1px black;
+    position: relative;
+    text-align: center;
+    display: flex;
+}     
