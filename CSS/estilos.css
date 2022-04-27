@@ -14,7 +14,6 @@ body{
 
 /* _____________GRID PARA PAGINA 1 MUESTRA INDEX _______________________*/
 /* A TRABAJAR CON GRID ._. */
-/* LO INTENTE PERO SE ROMPIA TODO SUPONGO QUE PODRIA INTENTAR ARMAR UNA GRID PARA EL COLLAGE DE LA MUESTRA GRAL DEL INICIO. PERO PARA EL LAY OUT SE ME QUEMARON LOS LIBROS */
 @media only screen and (min-width: 0px) and (max-width: 767px){
     .gridContainerA{
         display: grid;
