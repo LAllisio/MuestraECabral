@@ -9,7 +9,7 @@ html{
 }
 
 body{
-    background-color: brown;
+    background-image: linear-gradient(to top, rgb(97, 26, 26), rgb(216, 60, 60));
 }
 
 /* _____________GRID PARA PAGINA 1 MUESTRA INDEX _______________________*/
@@ -132,7 +132,7 @@ nav{
 
 #footer {
     border: solid;
-    background-color: rgb(255, 226, 94);
+    background-color: rgb(221, 129, 2);
     height: auto;
     display: flex;
     justify-content: space-around;
