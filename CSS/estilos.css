@@ -427,5 +427,8 @@ ul {list-style-type: none;}
     border: solid 1px black;
     position: relative;
     text-align: center;
-    display: flex;
+    display: inline-block;
 }     
+
+#ellaPerfil{box-sizing: border-box;
+height: 300px;}
