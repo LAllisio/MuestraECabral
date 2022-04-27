@@ -173,7 +173,15 @@ section{
     flex-wrap: nowrap;
 }
 section div img {width: 100%; height:auto;}
-img{border-radius: 10px;}
+img{
+    border-radius: 10px;
+    transition: all 3s;
+}
+img:hover {
+    height: 300px;
+    width: 500px;
+    background-color: white;
+}
 
 .descripcionTematica{
     display: flex;
