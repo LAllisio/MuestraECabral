@@ -6,4 +6,4 @@ Digital exhibition of paintings
 
 To see my project enter the following [link](https://lallisio.github.io/MuestraECabral/) enjoy it.
 
-<img src="IMAGENES/contacto.jpg">
+ <img src="../IMAGENES/contacto.jpeg" alt="Ella" height= 440px>
