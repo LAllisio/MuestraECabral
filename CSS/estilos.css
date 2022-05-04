@@ -12,41 +12,8 @@ body{
     background-image: linear-gradient(to top, rgb(97, 26, 26), rgb(216, 60, 60));
 }
 
-/* _____________GRID PARA PAGINA 1 MUESTRA INDEX _______________________*/
-/* A TRABAJAR CON GRID ._. */
-@media only screen and (min-width: 0px) and (max-width: 767px){
-    .gridContainerA{
-        display: grid;
-        grid-area:
-         "encabezado encabezado"
-         "nav nav"
-         "collage collage"
-         "tematicaA tematicaA"
-         "tematicaA1 tematicaA1"
-         "tarjetaA1a tarjetaA1a"
-         "tarjetaA1b tarjetaA1b"
-         "tematicaA2 tematicaA2"
-         "tarjetaA2a tarjetaA2a"
-         "tarjetaA2b tarjetaA2b"
-         "tematicaB tematicaB"
-         "tematicaB1 tematicaB1"
-         "tarjetaB1a tarjetaB1a"
-         "tarjetaB1b tarjetaB1b"
-         "tematicaB2 tematicaB2"
-         "tarjetaB2a tarjetaB2a"
-         "tarjetaB2b tarjetaB2b"
-         "tematicaC tematicaC"
-         "tematicaC1 tematicaC1"
-         "tarjetaC1a tarjetaC1a"
-         "tarjetaC1b tarjetaC1b"
-         "pie pie"
-        ;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 25px 10px 75% 100vh 10% 50% 50% 10% 50% 50% 100% 10% 50% 50% 10% 50% 50% 100% 10% 50% 50% 20%;
-    }
-
-
-}
+/* _____________BOOTSTRAP PARA PAGINA 1 MUESTRA INDEX _______________________*/
+/* A TRABAJAR CON BOOTSTRAP ._. */
 
 
 header{
@@ -54,7 +21,8 @@ header{
     grid-area: encabezado;
     height: 6vh;
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: space-between;
     color: white;
 }
 
@@ -66,69 +34,83 @@ nav{
     display: flex;
 }
 
+main {justify-content: center;}
+
 #Muestra{
     background-color: orange;
-    grid-area: collage;
     height: 90vh;
-    width: auto;
     display: flex;
 }
 
 #Postales{
-    grid-area: tematicaA;
     display: flex;
-    width: auto;}
+}
 
 #Rurales{
     background-color: rgb(0, 0, 0);
-    grid-area: tamaticaA1;}
-#TarjetaA1a{grid-area: tarjetaA1a;
-    display: flex;}
-#TarjetaA1b{grid-area: tarjetaA1b;
-    display: flex;}
+}
+    
+#TarjetaA1a{
+    text-align: left;
+    display: flex;
+}
+
+#TarjetaA1b{text-align: right;
+    display: flex;
+}
 
 #Bosques{
     background-color: rgb(0, 0, 0);
-    grid-area: tematicaA2;}
-#TarjetaA2a{grid-area: tarjetaA2a;
-    display: flex;}
-#TarjetaA2b{grid-area: tarjetaA2b;
-    display: flex;}
+    grid-area: tematicaA2;
+}
+#TarjetaA2a{text-align: left;
+    display: flex;
+}
+#TarjetaA2b{text-align: right;
+    display: flex;
+}
 
 #NatMuerta{
     grid-area: tematicaB;
     display: flex;
-    width: auto;}
+}
 
 #Flores{
     background-color: rgb(0, 0, 0);
-    grid-area: tematicaB1;}
-#TarjetaB2a{grid-area: tarjetaB1a;
-    display: flex;}
-#TarjetaB2b{grid-area: tarjetaB1b;
-    display: flex;}
+    grid-area: tematicaB1;
+}
+#TarjetaB2a{text-align: left;
+    display: flex;
+}
+#TarjetaB2b{text-align: right;
+    display: flex;
+}
 
 #Alimentos{
     background-color: rgb(0, 0, 0);
-    grid-area: tematicaB2;}
-#TarjetaB2a{grid-area: tarjetaB2a;
-    display: flex;}
-#TarjetaB2b{grid-area: tarjetaB2b;
-    display: flex;}
+    grid-area: tematicaB2;
+}
+#TarjetaB2a{text-align: left;
+    display: flex;
+}
+#TarjetaB2b{text-align: right;
+    display: flex;
+}
 
 #Abstractos{
     grid-area: tematicaC;
     display: flex;
-    width: auto;}
+}
 #Musica{
     background-color: rgb(0, 0, 0);
-    grid-area: tematicaC1;}
-#TarjetaC2a{grid-area: tarjetaC1a;
-    display: block;}
-#TarjetaC2b{grid-area: tarjetaC1b;
+    grid-area: tematicaC1;
+}
+#TarjetaC2a{text-align: left;
     display: block;
 }
-
+#TarjetaC2b{text-align: right;
+    display: block;
+}
 #footer {
     border: solid;
     background-color: rgb(221, 129, 2);
@@ -143,8 +125,18 @@ nav{
 /* ____________GENERALES_______________________________________ */
 
 /* COLLAGE PRINCIPAL Y TEMATICAS */
+main section div {
+    display: block;
+    height: 90vh;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: blue;
+}
+
 section{
-    height: 100vh;
+    height: 90vh;
     width: auto;
     background-color: white;
     border: solid 1px black;
@@ -152,54 +144,46 @@ section{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    margin-left: 10vw;
-    margin-right: 10vw;
-    padding-left: 10vw;
-    padding-right: 10vw;
-    padding-top: 5vh;
-    padding-bottom: 5vh;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 .eslogan{font-style: italic;}
 
-/* CONTENEDOR IMAGEN DE TEMATICA*/
+/* CONTENEDOR DE LA IMAGEN DE LAS TEMATICAS*/
 .imagenTema {
-    height: 65vh;
+    height: auto;
     border:solid 1px black;
     background-color: rgb(0, 0, 0);
-    display: flex;
+    display:block;
     justify-content: center;
     align-items: center;
     flex-wrap: nowrap;
-}
-section div img {width: 100%; height:auto;}
-img{
-    border-radius: 10px;
-    transition: all 3s;
-}
-img:hover {
-    height: 300px;
-    width: 500px;
-    background-color: white;
+    background-color: rgb(1, 1, 1);
 }
 
 .descripcionTematica{
     display: flex;
     flex-direction: column;
-    height: 20vh;
-    width: 100%;
+    height: 20%;
+    width: 90%;
     color:red;
     text-align: center;
     border: solid 1px black;
     padding: 50px;
     background-color: white;
+    font-size: medium;
 }
+
+
 
 h2 { color: white;
     background-color: black;
     display: block;
-    height: 4vh;}
+    height: 40%;
+    font-size: medium;
+}
 
-/* _______TARJETAS DE CUADROS*/
+/* ________________________TARJETAS DE CUADROS*/
 article{
     /* width: auto; */
     height: 400px;
@@ -214,6 +198,17 @@ article{
     text-align: center;
     margin: 0px 10vw 0px 10vw;
     padding: 10px 50px 10px 50px;
+}
+
+/* IMAGEN DE LAS TARJETAS*/
+article img{
+    border-radius: 10px;
+    transition: all 3s;
+}
+article img:hover {
+    height: 300px;
+    width: 500px;
+    background-color: white;
 }
 
 
@@ -302,31 +297,6 @@ ul {list-style-type: none;}
 
 
 /* _______GRID PARA PAGINA 3 "PARTICIPACIONES"____________________________________ */
-
-@media only screen and (min-width: 0px) and (max-width: 767px){
-    .gridContainerB{
-        display: grid;
-        grid-area:
-         "encabezado encabezado"
-         "nav nav"
-         "collage2 collage2"
-         "Expocisiones Expocisiones"
-         "tarjetaD tarjetaD"
-         "tarjetaE tarjetaE"
-         "resenas resenas"
-         "tarjetaF tarjetaG"
-         "tarjetaH tarjetaI"
-         "Tour Tour"
-         "tour tour"
-         "contacto contacto"
-         "formulario formulario" 
-         "pie pie"
-        ;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 25px 8px 75% 100% 50% 50% 100% 50% 50% 8% 100% 80% 100% 20%; 
-    }
-}
-
 
 
 #Participaciones{
