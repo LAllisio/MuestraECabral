@@ -136,7 +136,7 @@ main section div {
 }
 
 section{
-    height: 90vh;
+    height: 97vh;
     width: auto;
     background-color: white;
     border: solid 1px black;
@@ -146,6 +146,7 @@ section{
     align-items: center;
     padding-top: 15px;
     padding-bottom: 15px;
+    margin-bottom: 3vh;
 }
 .eslogan{font-style: italic;}
 
@@ -172,6 +173,7 @@ section{
     padding: 50px;
     background-color: white;
     font-size: medium;
+    justify-content: space-around;
 }
 
 
@@ -179,24 +181,26 @@ section{
 h2 { color: white;
     background-color: black;
     display: block;
-    height: 40%;
+    height: 3vh;
     font-size: medium;
+    margin-bottom: 3vh;
+    align-items: center;
 }
 
 /* ________________________TARJETAS DE CUADROS*/
 article{
     /* width: auto; */
-    height: 400px;
+    height: 44vh;
     border: solid 1px black;
     background-color: white;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     /* height: 42vh; */
     color:red;
     text-align: center;
-    margin: 0px 10vw 0px 10vw;
+    margin-bottom: 3vh;
     padding: 10px 50px 10px 50px;
 }
 
@@ -209,6 +213,13 @@ article img:hover {
     height: 300px;
     width: 500px;
     background-color: white;
+}
+
+article div h3{padding: 3%;
+font-size: 4vh;}
+
+article div p{padding: 3%;
+    font-size: 1.5vh;
 }
 
 
